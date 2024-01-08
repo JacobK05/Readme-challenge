@@ -18,8 +18,8 @@ const questions = [
 
 {
   input:'input',
-  installation:'Proved a description to instal your project.',
-  name: 'instal',
+  installation:'Proved a description to install your project.',
+  name: 'How do you install this project',
 },
 
 {
@@ -50,10 +50,17 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then((Response) => {
+    console.log("Creating Professional README.md File...");
+    writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
+})
+}
 
 // Function call to initialize app
 init();
