@@ -23,7 +23,7 @@ const questions = [
 },
 
 {
-  type:'list',
+  type:'checkbox',
   name: 'License',
   license:'Which license did you use. Please select one',
   choices:'[MIT License, Apache License 2.0, ISC License, BSD 3-Clause License, None ]',
