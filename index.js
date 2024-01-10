@@ -5,46 +5,46 @@ const path = require("path");
 // TODO: Create an array of questions for user input
 const questions = [ 
   {
-  input: "input",
-  title: 'What is the title of your Project?',
-  name: 'Project Name',
+  type: "input",
+  name: 'ProjectName',
+  message: 'What is the title of your Project?',
 },
 
 {
-  input:'input',
-  description: 'Write a description of your project.',
-  name:'short description',
+  type:'input',
+  name:'description',
+  message: 'Write a description of your project.',
 },
 
 {
-  input:'input',
-  installation:'Proved a description to install your project.',
-  name: 'How do you install this project',
+  type:'input',
+  name: 'Installation',
+  message:'Proved a description to install your project.',
 },
 
 {
   type:'checkbox',
   name: 'License',
-  license:'Which license did you use. Please select one',
+  message:'Which license did you use. Please select one',
   choices:'[MIT License, Apache License 2.0, ISC License, BSD 3-Clause License, None ]',
 },
 
 {
   type:'input',
-  usage:'type how to use and your projects functionalities',
   name:'usage',
+  message:'type how to use and your projects functionalities',
 },
 
 {
   type:'input',
-  contributors: 'list all the persons that contributed to the project.',
-  name:'contributors'
+  name:'contributors',
+  message: 'list all the persons that contributed to the project.',
 },
 
 {
   type:'input',
-  Info:'Proved your git hub name and other personal information',
-  name:'info'
+  name:'info',
+  message:'Proved your git hub name and other personal information',
 },
 
 ];

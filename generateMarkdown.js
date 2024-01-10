@@ -24,7 +24,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== "none"){
     return `## license
-       Licensed under the ${license} license`
+       Licensed under the ${license}`
   }
   return ""
 }
@@ -32,7 +32,19 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
+  ${renderLicenseBadge(data.license)}
+  ## Project Name
+  ${data.projectName}
+  ## Description
+  ${data.description}
+  ## Instal
+  ${data.installation}
+  ## Usage
+  ${data.usage}
+  ## Contributors
+  ${data.contributors}
+  ## information
+  ${data.info}
 `;
 }
 
