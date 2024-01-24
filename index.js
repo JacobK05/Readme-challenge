@@ -30,7 +30,11 @@ const questions = [
   message: "Please select a license applicable to this project.",
   choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"],
  },
-
+{
+  type: "input",
+  name: "usage",
+  message: "Explain how to use your project."
+},
 {
   type:'input',
   name:'contributors',
