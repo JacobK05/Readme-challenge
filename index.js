@@ -23,18 +23,13 @@ const questions = [
   message:'Proved a description to install your project.',
 },
 
-{
-  type:'checkbox',
-  name: 'License',
-  message:'Which license did you use. Please select one',
-  choices:'[MIT License, Apache License 2.0, ISC License, BSD 3-Clause License, None ]',
-},
 
 {
-  type:'input',
-  name:'usage',
-  message:'type how to use and your projects functionalities',
-},
+  type: "checkbox",
+  name: "license",
+  message: "Please select a license applicable to this project.",
+  choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"],
+ },
 
 {
   type:'input',
