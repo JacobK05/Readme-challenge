@@ -1,7 +1,7 @@
 # Project Name
   ReadMe challenge
 
-  ![Github license](https://img.shields.io/badge/license--blue.svg)
+
   
   ## Description
   Fot this project we used inquirer and other packages  to create a readme generator that when given answer s to the questions presented in the terminal it will create a readme file with your answers.
@@ -15,7 +15,7 @@
   
 
   ## Instal
-  After you upload the files in Git open the index.js terminal and type npm i, the run node index.js.
+  After you upload the files in Git open the index.js terminal and type npm i.
 
 
   ## Usage
